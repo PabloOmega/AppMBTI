@@ -2,19 +2,6 @@
 
 setlocal enabledelayedexpansion
 
-set "ruta_del_ejecutable=wkhtmltox-0.12.6-1.msvc2015-win64.exe"
-
-:: Verifica si el archivo ejecutable existe
-if not exist "%ruta_del_ejecutable%" (
-    echo El archivo ejecutable no se encuentra en la ruta especificada.
-    pause
-    exit /b
-)
-
-echo Espere mientras se instala wkhtmltox, dar clic en siguiente hasta el final, ¡NO CAMBIE LA RUTA POR DEFECTO!
-echo Una vez instalado el wkhtmltox, continue con el proceso de instalación presionando aquí cualquier tecla
-pause
-
 :: Entorno virtual
 set VIRTUAL_ENV_NAME=env_django
 
