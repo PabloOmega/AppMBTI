@@ -1,0 +1,110 @@
+
+p {
+    background-color: white;
+    color: rgb(112 112 112);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    font-family: 'Segoe UI', Arial;
+    text-align: justify-all;
+    letter-spacing: 0;
+    margin: 30px;
+}
+
+textarea {
+    position: relative;
+    box-sizing: content-box;
+    background-color: white;
+    text-align: left;
+    letter-spacing: 0.00px;
+    color: rgba(112, 112, 112, 1);
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Segoe UI', Arial;
+    text-decoration: none;
+    box-shadow: none;
+    overflow-y: auto;
+    resize: vertical;
+    height: 100px;
+    width: auto;
+}
+
+.question {
+    position: relative;
+    float: left;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+    border: 1px solid rgba(112, 112, 112, 1);
+    border-radius: 86px;
+    box-shadow: none;
+    margin: 30px 0px 30px 0px;
+    width: 850px;
+}
+
+.question p {
+    background-color: white;
+    color: rgb(112 112 112);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    font-family: 'Segoe UI', Arial;
+    text-align: justify-all;
+    letter-spacing: 0;
+    margin: 30px;
+}
+
+.microfono {
+    position: relative;
+    box-sizing: border-box;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(112, 112, 112, 1);
+    box-shadow: none;
+    width: 281.00px;
+    height: 52.00px;
+    margin: 10px 0px 30px 0px;
+}
+
+.microfono-icono {
+    background-image: url("../images/microphone.png");
+}
+
+    .microfono span {
+        position: relative;
+        box-sizing: content-box;
+        cursor: pointer;
+        background-color: rgba(255, 255, 255, 0);
+        text-align: left;
+        letter-spacing: 0.00px;
+        color: rgba(112, 112, 112, 1);
+        font-size: 20.00px;
+        font-weight: 400;
+        font-style: normal;
+        font-family: 'Segoe UI', Arial;
+        text-decoration: none;
+        box-shadow: none;
+        overflow-x: unset;
+        overflow-y: unset;
+        white-space: pre;
+    }
+
+.anterior {
+    margin-right: 80px;
+}
+
+.siguiente {
+    margin-left: 80px;
+}
+
+.textarea-error {
+    border: 2px solid red;
+}

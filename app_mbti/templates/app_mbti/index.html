@@ -1,0 +1,55 @@
+<!-- index.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ language.index_title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+</head>
+<body>
+
+    <div class="logos">
+        <div class="logo-global"></div>
+        <div class="logo-team"></div>
+    </div>
+
+    <h2>{{ language.index_title }}</h2>
+    <form method="post" action="{% url 'app_mbti/index.html' %}">
+        {% csrf_token %}
+
+        <div class="rectangulo">
+            <div class="icono language-icon"></div>
+            {{ form.language }}
+            {{ form.language.errors }}
+        </div>
+
+        <div class="rectangulo">
+            <div class="icono user-icon"></div>
+            {{ form.name }}
+            {{ form.name.errors }}
+        </div>
+
+        <div class="rectangulo">
+            <div class="icono nacionality-icon"></div>
+            {{ form.nacionality }}
+            {{ form.nacionality.errors }}
+        </div>
+
+        <div class="rectangulo">
+            <div class="icono email-icon"></div>
+            {{ form.email }}
+            {{ form.email.errors }}
+        </div>
+        <button type="submit" class="navegacion">{{ language.index_start_button }}</button>
+    </form>
+
+    <script>
+        // Agrega placeholders utilizando JavaScript
+        document.getElementById("id_name").placeholder = "{{ language.index_name_placeholder }}";
+        document.getElementById("id_nacionality").placeholder = "{{ language.index_nacionality_placeholder }}";
+        document.getElementById("id_email").placeholder = "{{ language.index_email_placeholder }}";
+    </script>
+</body>
+</html>

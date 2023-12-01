@@ -1,0 +1,153 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>AppMBTI</Name>
+    <RootNamespace>AppMBTI</RootNamespace>
+    <InterpreterId>MSBuild|env_mbti|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>9055db30-7510-4aa6-b5f2-f129a583b638</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>..\..\Entornos virtuales\env_mbti</SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>AppMBTI.settings</DjangoSettingsModule>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app_mbti\admin.py" />
+    <Compile Include="app_mbti\api.py" />
+    <Compile Include="app_mbti\apps.py" />
+    <Compile Include="app_mbti\forms.py" />
+    <Compile Include="app_mbti\migrations\__init__.py" />
+    <Compile Include="app_mbti\model.py" />
+    <Compile Include="app_mbti\models.py" />
+    <Compile Include="app_mbti\tests.py" />
+    <Compile Include="app_mbti\urls.py" />
+    <Compile Include="app_mbti\views.py" />
+    <Compile Include="app_mbti\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="AppMBTI\__init__.py" />
+    <Compile Include="AppMBTI\settings.py" />
+    <Compile Include="AppMBTI\urls.py" />
+    <Compile Include="AppMBTI\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app_mbti\mean_std\Mean_Std_E_vs_I.csv" />
+    <Content Include="app_mbti\mean_std\Mean_Std_J_vs_P.csv" />
+    <Content Include="app_mbti\mean_std\Mean_Std_S_vs_N.csv" />
+    <Content Include="app_mbti\mean_std\Mean_Std_T_vs_F.csv" />
+    <Content Include="app_mbti\pesos\E_vs_I_Red_Neuronal.h5" />
+    <Content Include="app_mbti\pesos\J_vs_P_Red_Neuronal.h5" />
+    <Content Include="app_mbti\pesos\S_vs_N_Red_Neuronal.h5" />
+    <Content Include="app_mbti\pesos\T_vs_F_Red_Neuronal.h5" />
+    <Content Include="app_mbti\static\css\aceptar.css" />
+    <Content Include="app_mbti\static\css\common.css" />
+    <Content Include="app_mbti\static\css\fin.css" />
+    <Content Include="app_mbti\static\css\index.css" />
+    <Content Include="app_mbti\static\css\informe.css" />
+    <Content Include="app_mbti\static\css\preguntas.css" />
+    <Content Include="app_mbti\static\css\resultado.css" />
+    <Content Include="app_mbti\static\css\terminos.css" />
+    <Content Include="app_mbti\static\images\background.png" />
+    <Content Include="app_mbti\static\images\language_icon.png" />
+    <Content Include="app_mbti\static\images\logo_team.png" />
+    <Content Include="app_mbti\static\images\logo_global.png" />
+    <Content Include="app_mbti\static\images\user_icon.png" />
+    <Content Include="app_mbti\static\images\email_icon.png" />
+    <Content Include="app_mbti\static\images\nacionality_icon.png" />
+    <Content Include="app_mbti\static\images\microphone.png" />
+    <Content Include="app_mbti\static\js\preguntas.js" />
+    <Content Include="app_mbti\templates\app_mbti\aceptar.html" />
+    <Content Include="app_mbti\templates\app_mbti\fin.html" />
+    <Content Include="app_mbti\templates\app_mbti\index.html" />
+    <Content Include="app_mbti\templates\app_mbti\informes\informe_template.html" />
+    <Content Include="app_mbti\templates\app_mbti\informes\informe_usuario.html" />
+    <Content Include="app_mbti\templates\app_mbti\preguntas.html" />
+    <Content Include="app_mbti\templates\app_mbti\resultado.html" />
+    <Content Include="app_mbti\templates\app_mbti\terminos.html" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AppMBTI\" />
+    <Folder Include="app_mbti\" />
+    <Folder Include="app_mbti\datos\informes\" />
+    <Folder Include="app_mbti\migrations\" />
+    <Folder Include="app_mbti\mean_std\" />
+    <Folder Include="app_mbti\audios\" />
+    <Folder Include="app_mbti\datos\" />
+    <Folder Include="app_mbti\static\" />
+    <Folder Include="app_mbti\pesos\" />
+    <Folder Include="app_mbti\static\css\" />
+    <Folder Include="app_mbti\static\images\" />
+    <Folder Include="app_mbti\static\js\" />
+    <Folder Include="app_mbti\templates\" />
+    <Folder Include="app_mbti\templates\app_mbti\" />
+    <Folder Include="app_mbti\templates\app_mbti\informes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="..\..\Entornos virtuales\env_mbti\">
+      <Id>env_mbti</Id>
+      <Version>3.9</Version>
+      <Description>env_mbti (Python 3.9 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

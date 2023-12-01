@@ -1,0 +1,31 @@
+<!-- terminos.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ language.terminos_title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/terminos.css' %}">
+</head>
+<body>
+
+    <div class="logos">
+        <div class="logo-global"></div>
+        <div class="logo-team"></div>
+    </div>
+
+    <h2>{{ language.terminos_title }}</h2>
+
+    <div class="text-container">
+        <p>
+            {{ language.terminos_paragraph }}
+        </p>
+    </div>
+    <div class="navegacion-contenedor">
+        <a href="{% url 'app_mbti/index.html' %}" class="navegacion rechazar">{{ language.terminos_reject_button }}</a>
+        <a href="{% url 'get_question_form' user.id 1 %}" class="navegacion aceptar">{{ language.terminos_accept_button }}</a>
+    </div>
+
+</body>
+</html>

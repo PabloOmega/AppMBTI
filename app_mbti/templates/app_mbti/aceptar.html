@@ -1,0 +1,32 @@
+<!-- aceptar.html -->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>{{ language.aceptar_title }}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/aceptar.css' %}">
+</head>
+<body>
+
+    <div class="logos">
+        <div class="logo-global"></div>
+        <div class="logo-team"></div>
+    </div>
+
+    <h2>{{ language.aceptar_title }}</h2>
+
+    <!--<div class="text-container">
+
+    </div>-->
+
+    <p class="text-container">
+        {{ language.aceptar_paragraph }}
+        <span class="enfasis"><a href="{% url 'terminos' user_id=user.id %}">{{ language.aceptar_terms }}</a></span>.
+    </p>
+    <a href="{% url 'get_question_form' user.id 1 %}" class="navegacion aceptar">{{ language.aceptar_accept_button }}</a>
+    <a href="{% url 'app_mbti/index.html' %}" class="navegacion anterior">{{ language.aceptar_last_button }}</a>
+
+</body>
+</html>

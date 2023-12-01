@@ -1,0 +1,23 @@
+
+.text-container {
+    position: relative;
+    float: right;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 0px 40px 0px 40px;
+    height: 450px;
+    width: auto;
+    color: rgba(112, 112, 112, 1);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18.00px;
+    font-family: 'Segoe UI', Arial;
+    text-align: justify-all;
+    letter-spacing: 0;
+    white-space: pre-line;
+    overflow-y: scroll;
+    background-color: white;
+}

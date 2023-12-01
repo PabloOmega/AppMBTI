@@ -1,0 +1,31 @@
+.contenedor {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    overflow-x: unset;
+    overflow-y: unset;
+    margin: 0px 60px 0px 60px;
+    height: auto;
+}
+
+.logo-global {
+    width: 600px;
+    height: 200px;
+}
+
+h1 {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: center;
+    letter-spacing: 0.00px;
+    color: rgba(0, 173, 239, 1);
+    -webkit-text-stroke: 1.00px rgba(173, 49, 131, 1);
+    font-size: 44.00px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Segoe UI', Arial;
+}

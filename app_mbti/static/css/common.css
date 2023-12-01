@@ -1,0 +1,130 @@
+body {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', serif;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    background-image: url("../images/background.png");
+    background-size: cover;
+    background-position-y: 10%;
+    align-items: stretch;
+}
+
+.logos {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    overflow-x: unset;
+    overflow-y: unset;
+    margin: 0px 60px 0px 60px;
+    height: auto;
+}
+
+.logo-global {
+    position: relative;
+    float: left;
+    background-image: url("../images/logo_global.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    cursor: default;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    width: 251.00px;
+    height: 79.00px;
+}
+
+.logo-team {
+    position: relative;
+    float: right;
+    background-image: url("../images/logo_team.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    cursor: default;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: none;
+    width: 208.00px;
+    height: 100px;
+}
+
+h2 {
+    position: relative;
+    text-align: center;
+    letter-spacing: 0.00px;
+    color: rgba(59, 171, 226, 1);
+    -webkit-text-stroke: 1.00px rgba(228, 228, 228, 1);
+    font-size: 32.00px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Segoe UI', Arial;
+    text-decoration: none;
+    white-space: pre;
+    margin: 10px;
+}
+
+form {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin: 30px 0px 30px 0px;
+    height: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icono {
+    box-sizing: content-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    margin: 20px;
+    padding: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0.00px;
+    box-shadow: none;
+    width: 40.00px;
+    height: 40.00px;
+}
+
+
+.navegacion {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0);
+    text-align: right;
+    letter-spacing: 0.00px;
+    color: rgba(49, 174, 220, 1);
+    -webkit-text-stroke: 1.00px rgba(255, 255, 255, 1);
+    font-size: 32.00px;
+    font-weight: 700;
+    font-style: normal;
+    font-family: 'Segoe UI', Arial;
+}
+
+.navegacion-contenedor {
+    position: relative;
+    float: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+    margin: 0px 60px 0px 60px;
+    height: auto;
+    flex-wrap: wrap;
+}
