@@ -1,8 +1,6 @@
 from openai import OpenAI
 import tiktoken
 import os
-from googletrans import Translator
-from google_trans_new import google_translator 
 from deep_translator import GoogleTranslator
 
 

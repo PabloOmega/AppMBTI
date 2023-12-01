@@ -80,7 +80,10 @@
     <Content Include="app_mbti\templates\app_mbti\preguntas.html" />
     <Content Include="app_mbti\templates\app_mbti\resultado.html" />
     <Content Include="app_mbti\templates\app_mbti\terminos.html" />
+    <Content Include="open_page.bat" />
     <Content Include="requirements.txt" />
+    <Content Include="run.bat" />
+    <Content Include="setup.bat" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="AppMBTI\" />
